@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Capaciti</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-[#F1D1D1] text-gray-800">
+
+  <!-- Header -->
+<header class="bg-blue-900 fixed w-full top-0 left-0 z-50 shadow">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row md:justify-between md:items-center">
+    <!-- Logo + Text Side by Side -->
+<a href="#" class="flex items-center space-x-3">
+  <img src="images/welcome image.jpg" alt="Capaciti Logo" class="h-12">
+  <span class="text-2xl font-bold text-white">CAPACITI</span>
+
+    </a>
+
+    <!-- Navigation -->
+    <nav aria-label="Primary navigation">
+      <ul class="flex flex-col md:flex-row md:space-x-6 space-y-2 md:space-y-0 text-center md:text-right text-white">
+        <li><a href="#home" class="px-3 py-1 rounded hover:bg-white hover:text-blue-600 transition">Home</a></li>
+        <li><a href="#about" class="px-3 py-1 rounded hover:bg-white hover:text-blue-600 transition">About</a></li>
+        <li><a href="#services" class="px-3 py-1 rounded hover:bg-white hover:text-blue-600 transition">Services</a></li>
+        <li><a href="#contact" class="px-3 py-1 rounded hover:bg-white hover:text-blue-600 transition">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+      </h1>
+      <nav>
+        <ul class="flex flex-col md:flex-row md:space-x-6 space-y-2 md:space-y-0 text-center md:text-right text-white">
+          <li><a href="#home" class="px-3 py-1 rounded hover:bg-white hover:text-[#1D2951] transition">Home</a></li>
+          <li><a href="#about" class="px-3 py-1 rounded hover:bg-white hover:text-[#1D2951] transition">About</a></li>
+          <li><a href="#services" class="px-3 py-1 rounded hover:bg-white hover:text-[#1D2951] transition">Services</a></li>
+          <li><a href="#contact" class="px-3 py-1 rounded hover:bg-white hover:text-[#1D2951] transition">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative w-full h-screen flex items-center justify-center overflow-hidden mt-20">
+    <img src="images/welcome image.jpg" alt="Welcome" class="w-full h-full object-cover absolute top-0 left-0 z-0">
+    <div class="absolute inset-0 bg-[#6115D0]/50 z-10"></div>
+    <div class="relative z-20 text-center px-4">
+      <h2 class="text-[#F25251] text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg">Welcome to Capaciti</h2>
+      <p class="text-[#F1D1D1] text-lg md:text-xl mb-6 drop-shadow-md">Innovative solutions for your business growth.</p>
+      <button class="px-6 py-3 bg-[#F25251] text-white font-semibold rounded-lg hover:bg-[#6115D0] drop-shadow-md">Get Started</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-[#F1D1D1]">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-12 text-[#1D2951]">About Us</h2>
+      <p class="text-gray-700 text-center max-w-3xl mx-auto mb-12">
+        Capaciti is your trusted technology partner. We provide innovative solutions to help your business grow and succeed in a rapidly evolving digital world.
+      </p>
+      <div class="grid sm:grid-cols-2 gap-8 mb-16">
+        <div class="bg-gradient-to-br from-[#1D2951] to-[#6115D0] text-white p-8 rounded-lg shadow-lg hover:scale-105 transform transition text-center">
+          <h3 class="text-2xl font-semibold mb-3">Our Mission</h3>
+          <p>To empower businesses with innovative technology solutions that drive growth and efficiency.</p>
+        </div>
+        <div class="bg-gradient-to-br from-[#F25251] to-[#F1D1D1] text-white p-8 rounded-lg shadow-lg hover:scale-105 transform transition text-center">
+          <h3 class="text-2xl font-semibold mb-3">Our Vision</h3>
+          <p>To be a leading technology partner recognized for creativity, reliability, and excellence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Values Section -->
+  <section id="core-values" class="py-16 bg-[#1D2951]">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-bold mb-10 text-white">Our Core Values</h3>
+      <div class="grid sm:grid-cols-3 gap-8 mb-16">
+        <div class="p-8 rounded-lg shadow-lg hover:scale-105 transform transition text-center" style="background-color:#F1D1D1; color:#1D2951;">
+          <h4 class="text-2xl font-semibold mb-3">Innovation</h4>
+          <p>We constantly innovate to provide cutting-edge solutions.</p>
+        </div>
+        <div class="p-8 rounded-lg shadow-lg hover:scale-105 transform transition text-center" style="background-color:#6115D0; color:white;">
+          <h4 class="text-2xl font-semibold mb-3">Integrity</h4>
+          <p>We conduct business with honesty and transparency.</p>
+        </div>
+        <div class="p-8 rounded-lg shadow-lg hover:scale-105 transform transition text-center" style="background-color:#F25251; color:white;">
+          <h4 class="text-2xl font-semibold mb-3">Customer Focus</h4>
+          <p>Our clients’ success is our top priority.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-16 bg-gradient-to-r from-[#1D2951] via-[#6115D0] to-[#F25251]">
+    <div class="max-w-6xl mx-auto px-4 text-center text-white">
+      <h2 class="text-4xl font-bold mb-12">Our Services</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white/20 backdrop-blur-md p-6 rounded-lg shadow hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold mb-2">Web Development</h3>
+          <p>Building responsive, modern websites tailored to your business needs.</p>
+        </div>
+        <div class="bg-white/20 backdrop-blur-md p-6 rounded-lg shadow hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold mb-2">AI Solutions</h3>
+          <p>Integrating AI and automation to enhance your business processes.</p>
+        </div>
+        <div class="bg-white/20 backdrop-blur-md p-6 rounded-lg shadow hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold mb-2">IT Support</h3>
+          <p>Reliable technical support and system maintenance for seamless operations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Team Slider Section -->
+<section id="team" class="py-16 bg-[#F1D1D1]">
+  <div class="max-w-5xl mx-auto px-4">
+    <h3 class="text-3xl font-bold text-center mb-10 text-[#1D2951]">Meet Our Team</h3>
+    <div id="slider" class="relative w-full overflow-hidden rounded-2xl shadow-lg aspect-[16/9]">
+
+      <!-- Slide 1 -->
+      <div class="absolute inset-0 flex items-center justify-center transition-opacity duration-1000 ease-in-out opacity-100" data-slide="0">
+        <img src="images/Chanel11 1 5.JPG" alt="Chanel - Project Manager" class="max-h-full max-w-full object-contain relative z-10">
+        <div class="absolute inset-0 bg-black/40 z-20"></div>
+        <div class="absolute bottom-0 left-0 right-0 p-6 text-white text-center z-30">
+          <h4 class="text-2xl font-semibold">Chanel — Project Manager</h4>
+          <p class="opacity-90">Leads innovation and ensures smooth delivery of projects.</p>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="absolute inset-0 flex items-center justify-center transition-opacity duration-1000 ease-in-out opacity-0" data-slide="1">
+        <img src="images/Kelly1 1 5.JPG" alt="Kelly - Software Engineer" class="max-h-full max-w-full object-contain relative z-10">
+        <div class="absolute inset-0 bg-black/40 z-20"></div>
+        <div class="absolute bottom-0 left-0 right-0 p-6 text-white text-center z-30">
+          <h4 class="text-2xl font-semibold">Kelly — Software Engineer</h4>
+          <p class="opacity-90">Builds scalable, reliable applications for our clients.</p>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="absolute inset-0 flex items-center justify-center transition-opacity duration-1000 ease-in-out opacity-0" data-slide="2">
+        <img src="images/Chesarae3 1 5.JPG" alt="Chesarae - Designer" class="max-h-full max-w-full object-contain relative z-10">
+        <div class="absolute inset-0 bg-black/40 z-20"></div>
+        <div class="absolute bottom-0 left-0 right-0 p-6 text-white text-center z-30">
+          <h4 class="text-2xl font-semibold">Chesarae — Designer</h4>
+          <p class="opacity-90">Crafts visually stunning UI/UX designs.</p>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="absolute inset-0 flex items-center justify-center transition-opacity duration-1000 ease-in-out opacity-0" data-slide="3">
+        <img src="images/Nash4 1 5.JPG" alt="Nash- QA Engineer" class="max-h-full max-w-full object-contain relative z-10">
+        <div class="absolute inset-0 bg-black/40 z-20"></div>
+        <div class="absolute bottom-0 left-0 right-0 p-6 text-white text-center z-30">
+          <h4 class="text-2xl font-semibold">Nash — QA Engineer</h4>
+          <p class="opacity-90">Ensures high-quality standards for all projects.</p>
+        </div>
+      </div>
+
+      <!-- Dots (only one container!) -->
+      <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-40">
+        <button type="button" class="h-2 w-2 rounded-full bg-white/60" data-dot="0"></button>
+        <button type="button" class="h-2 w-2 rounded-full bg-white/60" data-dot="1"></button>
+        <button type="button" class="h-2 w-2 rounded-full bg-white/60" data-dot="2"></button>
+        <button type="button" class="h-2 w-2 rounded-full bg-white/60" data-dot="3"></button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Partners Section -->
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="bg-gradient-to-r from-[#1D2951] via-[#6115D0] to-[#F25251] p-8 rounded-lg shadow-lg text-center text-white">
+        <h3 class="text-3xl font-bold mb-6">Our Partners</h3>
+        <img src="images/undefined (1) 5.png" alt="Our Partners" class="mx-auto w-full max-w-5xl rounded-lg shadow-lg">
+      </div>
+    </div>
+  </section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-16 bg-gradient-to-r from-[#1D2951] via-[#6115D0] to-[#F25251]">
+  <div class="max-w-5xl mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-10 text-center text-white">Contact Us</h2>
+
+    <div class="grid md:grid-cols-2 gap-8 items-start bg-[#F1D1D1] rounded-2xl shadow-xl p-8">
+      <!-- Left: Contact Details -->
+      <div class="space-y-6">
+        <!-- Phone -->
+        <a href="tel:+1234567890" class="flex items-center gap-4 group">
+          <div class="flex items-center justify-center w-12 h-12 rounded-full bg-[#6115D0] text-white shadow-md group-hover:bg-[#F25251] transition">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <span class="text-lg text-[#1D2951] group-hover:text-[#F25251] transition">
+            +123 456 7890
+          </span>
+        </a>
+
+        <!-- Email -->
+        <a href="mailto:youremail@example.com" class="flex items-center gap-4 group">
+          <div class="flex items-center justify-center w-12 h-12 rounded-full bg-[#6115D0] text-white shadow-md group-hover:bg-[#F25251] transition">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <span class="text-lg text-[#1D2951] group-hover:text-[#F25251] transition">
+            youremail@example.com
+          </span>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/yourlinkedin" target="_blank" class="flex items-center gap-4 group">
+          <div class="flex items-center justify-center w-12 h-12 rounded-full bg-[#6115D0] text-white shadow-md group-hover:bg-[#F25251] transition">
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+          <span class="text-lg text-[#1D2951] group-hover:text-[#F25251] transition">
+            linkedin.com/in/yourlinkedin
+          </span>
+        </a>
+
+        <!-- Address -->
+        <a href="https://maps.google.com?q=123+Business+Street,+Cape+Town" target="_blank" class="flex items-center gap-4 group">
+          <div class="flex items-center justify-center w-12 h-12 rounded-full bg-[#6115D0] text-white shadow-md group-hover:bg-[#F25251] transition">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <span class="text-lg text-[#1D2951] group-hover:text-[#F25251] transition">
+            123 Business Street, Cape Town
+          </span>
+        </a>
+
+      </div>
+
+      <!-- Right: Contact Form -->
+      <form id="contactForm" class="flex flex-col gap-4 bg-[#F1D1D1] p-6 rounded-xl shadow-lg">
+        <input type="text" placeholder="Your Name" class="p-3 border border-[#6115D0] rounded focus:outline-none focus:ring-2 focus:ring-[#6115D0] text-[#1D2951]" required />
+        <input type="email" placeholder="Your Email" class="p-3 border border-[#6115D0] rounded focus:outline-none focus:ring-2 focus:ring-[#6115D0] text-[#1D2951]" required />
+        <textarea placeholder="Message" class="p-3 border border-[#6115D0] rounded focus:outline-none focus:ring-2 focus:ring-[#6115D0] text-[#1D2951]" required></textarea>
+        <button type="submit" class="bg-[#6115D0] hover:bg-[#F25251] text-white p-3 rounded shadow-md transition font-semibold">
+          Send Message
+        </button>
+
+        <!-- Success Message (hidden by default) -->
+        <p id="successMessage" class="hidden text-green-600 font-semibold mt-2 text-center animate-bounce">
+          ✅ Your message has been sent successfully!
+        </p>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+<!-- Script to show success message -->
+<script>
+  const form = document.getElementById("contactForm");
+  const successMessage = document.getElementById("successMessage");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault(); // Stop real form submission
+
+    // Show message
+    successMessage.classList.remove("hidden");
+
+    // Reset form fields
+    form.reset();
+
+    // Hide message after 4 seconds
+    setTimeout(() => {
+      successMessage.classList.add("hidden");
+    }, 4000);
+  });
+</script>
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="bg-[#1D2951] text-white py-6 mt-16">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <p>&copy; 2025 Capaciti. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Slider Script -->
+  <script>
+    (function () {
+      const slider = document.getElementById('slider');
+      const slides = slider.querySelectorAll('[data-slide]');
+      const dots = slider.querySelectorAll('[data-dot]');
+      let current = 0;
+      const total = slides.length;
+      const DURATION = 4000;
+
+      function show(n) {
+        slides.forEach((s, i) => {
+          s.classList.toggle('opacity-100', i === n);
+          s.classList.toggle('opacity-0', i !== n);
+        });
+        dots.forEach((d, i) => {
+          d.classList.toggle('w-4', i === n);
+          d.classList.toggle('bg-white', i === n);
+          d.classList.toggle('bg-white/60', i !== n);
+        });
+        current = n;
+      }
+
+      let timer = setInterval(() => show((current + 1) % total), DURATION);
+      slider.addEventListener('mouseenter', () => clearInterval(timer));
+      slider.addEventListener('mouseleave', () => {
+        clearInterval(timer);
+        timer = setInterval(() => show((current + 1) % total), DURATION);
+      });
+      dots.forEach((dot, i) => {
+        dot.addEventListener('click', () => {
+          clearInterval(timer);
+          show(i);
+          timer = setInterval(() => show((current + 1) % total), DURATION);
+        });
+      });
+      show(0);
+    })();
+  </script>
+
+</body>
+</html>

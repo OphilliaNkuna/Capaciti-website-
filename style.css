@@ -1,0 +1,288 @@
+/* ===========================
+    Root Brand Colors
+=========================== */
+:root {
+    --space-kadet: #1D2951;
+    --purple: #6115D0;
+    --salmon: #F25251;
+    --pink: #F1D1D1;
+}
+
+
+/* ===========================
+    General Body
+=========================== */
+body {
+    background-color: var(--pink);
+    color: var(--space-kadet);
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding-top: 80px; /* prevent content hidden behind fixed header */
+}
+
+/* ===========================
+   Animated Gradient Heading
+=========================== */
+.animated-gradient {
+  background: linear-gradient(270deg, #F25251, #6115D0, #2563EB, #F25251);
+  background-size: 800% 800%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 10s ease infinite;
+}
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ===========================
+   Header & Navigation
+=========================== */
+header {
+  background-color: var(--space-kadet);
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* ensure above overlays */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+header h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--purple);
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+}
+@media(min-width: 768px) {
+  header nav ul {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+}
+header nav ul li a,
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  transition: all 0.3s ease;
+  display: block;
+  position: relative;
+  z-index: 1010; /* keeps links clickable */
+}
+header nav ul li a:hover,
+.nav-link:hover {
+  color: white;
+  background-color: var(--purple);
+}
+header nav ul li a.active {
+  color: white;
+  background-color: #1e40af;
+}
+
+/* ===========================
+   Buttons
+=========================== */
+button, .button {
+  background-color: var(--purple);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+button:hover, .button:hover {
+  background-color: var(--space-kadet);
+}
+
+/* ===========================
+    Sections
+=========================== */
+section {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 1rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+/* Overlay */
+.section-overlay, .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1;
+}
+
+/* ===========================
+    Hero Image
+=========================== */
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transform: scale(1);
+    animation: zoom 20s ease-in-out infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+@keyframes zoom {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* ===========================
+   Section Container / Content
+=========================== */
+.section-container {
+  position: relative;
+  z-index: 10;
+  max-width: 1200px;
+  text-align: center;
+  background-color: rgba(255,255,255,0.85);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Headings */
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+h3, h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+/* ===========================
+   Mission, Vision, Core Values Cards
+=========================== */
+.info-card {
+  background-color: rgba(255,255,255,0.95);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+.info-card h3, .info-card h4 {
+  color: var(--space-kadet);
+}
+.info-card p {
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===========================
+   About Section Images
+=========================== */
+#about {
+  background: linear-gradient(to right bottom, rgba(245,245,245,0.95), rgba(241,209,209,0.95));
+  padding: 5rem 1rem;
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+@media(min-width: 640px) { .about-grid { grid-template-columns: repeat(2, 1fr); } }
+@media(min-width: 1024px) { .about-grid { grid-template-columns: repeat(4, 1fr); } }
+
+.about-grid div {
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+.group-a img {
+  width: 100%;
+  height: 16rem;
+  object-fit: cover;
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+.group-b img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+.group-a img:hover,
+.group-b img:hover {
+  transform: scale(1.05);
+}
+
+/* ===========================
+   Cards
+=========================== */
+.card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+/* ===========================
+   Form Inputs
+=========================== */
+form input, form textarea {
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  width: 100%;
+  color: #111827;
+  font-size: 1rem;
+  outline: none;
+}
+form input:focus, form textarea:focus {
+  border-color: var(--purple);
+}
+
+/* ===========================
+   Footer
+=========================== */
+footer {
+  background-color: var(--space-kadet);
+  color: #ffffff;
+  padding: 1.5rem;
+  text-align: center;
+}
