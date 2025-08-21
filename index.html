@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Capaciti</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="main.js"></script>
   <style>
     html { scroll-behavior: smooth; }
   </style>
@@ -17,9 +19,7 @@
     <!-- Logo + Text Side by Side -->
 <a href="#" class="flex items-center space-x-3">
   <img src="images/welcome image.jpg" alt="Capaciti Logo" class="h-12">
-  <span class="text-2xl font-bold text-white">CAPACITI</span>
-
-    </a>
+  <span class="text-2xl font-bold text-white">CAPACITI</span> </a>
 
     <!-- Navigation -->
     <nav aria-label="Primary navigation">
@@ -61,16 +61,16 @@
     <div class="max-w-7xl mx-auto px-4">
       <h2 class="text-4xl font-bold text-center mb-12 text-[#1D2951]">About Us</h2>
       <p class="text-gray-700 text-center max-w-3xl mx-auto mb-12">
-        Capaciti is your trusted technology partner. We provide innovative solutions to help your business grow and succeed in a rapidly evolving digital world.
+       Established in 2010, CAPACITI, part of the UVU Africa Group, is at the forefront of preparing young individuals for the tech sector. CAPACITI has emerged as one of South Africa’s leading digital talent accelerators, annually training and placing approximately 1000 unemployed youth. CAPACITI is dedicated to fostering the inclusive growth of the digital economy by creating a pipeline of future-fit, skilled individuals equipped with relevant digital skills aligned with industry demand. Since its inception, CAPACITI has been refining solutions that aim to economically integrate talent, by providing scalable digital skills training and preparing them for the evolving workplace of the future. As a non-profit organisation, CAPACITI leverages partner investments to deliver demand-driven, targeted technical training that positively impacts lives.
       </p>
       <div class="grid sm:grid-cols-2 gap-8 mb-16">
         <div class="bg-gradient-to-br from-[#1D2951] to-[#6115D0] text-white p-8 rounded-lg shadow-lg hover:scale-105 transform transition text-center">
           <h3 class="text-2xl font-semibold mb-3">Our Mission</h3>
-          <p>To empower businesses with innovative technology solutions that drive growth and efficiency.</p>
+          <p>CAPACITI aims to democratize tech careers and foster inclusive societies in Africa, viewing quality education as essential for a diverse and growing digital economy.</p>
         </div>
         <div class="bg-gradient-to-br from-[#F25251] to-[#F1D1D1] text-white p-8 rounded-lg shadow-lg hover:scale-105 transform transition text-center">
           <h3 class="text-2xl font-semibold mb-3">Our Vision</h3>
-          <p>To be a leading technology partner recognized for creativity, reliability, and excellence.</p>
+          <p>We aim to empower digitally marginalized youth with technical skills and work readiness, focusing on meaningful career opportunities beyond just job acquisition.</p>
         </div>
       </div>
     </div>
@@ -83,15 +83,16 @@
       <div class="grid sm:grid-cols-3 gap-8 mb-16">
         <div class="p-8 rounded-lg shadow-lg hover:scale-105 transform transition text-center" style="background-color:#F1D1D1; color:#1D2951;">
           <h4 class="text-2xl font-semibold mb-3">Innovation</h4>
-          <p>We constantly innovate to provide cutting-edge solutions.</p>
+          <p>CAPACITI drives innovation by equipping young talent with cutting-edge digital skills and connecting them to industry opportunities. Through technology-driven training, partnerships, and scalable digital platforms, CAPACITI empowers individuals and organisations to thrive in the fast-changing digital econom</p>
         </div>
         <div class="p-8 rounded-lg shadow-lg hover:scale-105 transform transition text-center" style="background-color:#6115D0; color:white;">
           <h4 class="text-2xl font-semibold mb-3">Integrity</h4>
-          <p>We conduct business with honesty and transparency.</p>
+          <p> Do the right thing, always.
+our unwavering commitment to always do the right thing. It is the foundation of our culture, built upon honesty in our communication, accountability for our actions, and respect for everyone we engage with.</p>
         </div>
         <div class="p-8 rounded-lg shadow-lg hover:scale-105 transform transition text-center" style="background-color:#F25251; color:white;">
           <h4 class="text-2xl font-semibold mb-3">Customer Focus</h4>
-          <p>Our clients’ success is our top priority.</p>
+          <p>Our customer focus means we put our clients at the heart of every decision we make. We are dedicated to deeply understanding their unique challenges and goals, and we measure our own success by the value we create for them. We commit to being proactive, reliable partners who not only respond to needs but anticipate them, always going the extra mile to ensure their long-term success and build unshakable trust.</p>
         </div>
       </div>
     </div>
@@ -102,18 +103,29 @@
     <div class="max-w-6xl mx-auto px-4 text-center text-white">
       <h2 class="text-4xl font-bold mb-12">Our Services</h2>
       <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white/20 backdrop-blur-md p-6 rounded-lg shadow hover:shadow-xl transition">
-          <h3 class="text-xl font-semibold mb-2">Web Development</h3>
-          <p>Building responsive, modern websites tailored to your business needs.</p>
-        </div>
-        <div class="bg-white/20 backdrop-blur-md p-6 rounded-lg shadow hover:shadow-xl transition">
-          <h3 class="text-xl font-semibold mb-2">AI Solutions</h3>
-          <p>Integrating AI and automation to enhance your business processes.</p>
-        </div>
-        <div class="bg-white/20 backdrop-blur-md p-6 rounded-lg shadow hover:shadow-xl transition">
-          <h3 class="text-xl font-semibold mb-2">IT Support</h3>
-          <p>Reliable technical support and system maintenance for seamless operations.</p>
-        </div>
+        <div class="bg-white/20 backdrop-blur-md p-6 rounded-lg shadow hover:shadow-xl transition flex flex-col items-center relative overflow-hidden min-h-[250px]">
+  <img src="images/webdevelopment.png" alt="Web Development" class="absolute inset-0 w-full h-full object-cover z-0" />
+  <div class="relative z-10 bg-black/40 w-full h-full flex flex-col items-center justify-center p-4 rounded-lg">
+    <h3 class="text-xl font-semibold mb-2 text-white">Web Development</h3>
+    <p class="text-white">Building responsive, modern websites tailored to your business needs.</p>
+  </div>
+</div>
+        
+             <div class="bg-white/20 backdrop-blur-md p-6 rounded-lg shadow hover:shadow-xl transition flex flex-col items-center relative overflow-hidden min-h-[250px]">
+  <img src="images/ai.png" alt="Web Development" class="absolute inset-0 w-full h-full object-cover z-0" />
+  <div class="relative z-10 bg-black/40 w-full h-full flex flex-col items-center justify-center p-4 rounded-lg">
+    <h3 class="text-xl font-semibold mb-2 text-white">AI Solutions</h3>
+    <p class="text-white">Integrating AI and automation to enhance your business processes.</p>
+  </div>
+</div>
+
+     <div class="bg-white/20 backdrop-blur-md p-6 rounded-lg shadow hover:shadow-xl transition flex flex-col items-center relative overflow-hidden min-h-[250px]">
+  <img src="images/itsupport.png" alt="Web Development" class="absolute inset-0 w-full h-full object-cover z-0" />
+  <div class="relative z-10 bg-black/40 w-full h-full flex flex-col items-center justify-center p-4 rounded-lg">
+    <h3 class="text-xl font-semibold mb-2 text-white">IT Support</h3>
+    <p class="text-white">Reliable technical support and system maintenance for seamless operations.</p>
+  </div>
+</div>
       </div>
     </div>
   </section>
@@ -125,11 +137,11 @@
 
       <!-- Slide 1 -->
       <div class="absolute inset-0 flex items-center justify-center transition-opacity duration-1000 ease-in-out opacity-100" data-slide="0">
-        <img src="images/Chanel11 1 5.JPG" alt="Chanel - Project Manager" class="max-h-full max-w-full object-contain relative z-10">
+        <img src="images/Chanel11 1 5.JPG" alt="Chanél Oldfield - Head Of Capaciti" class="max-h-full max-w-full object-contain relative z-10">
         <div class="absolute inset-0 bg-black/40 z-20"></div>
         <div class="absolute bottom-0 left-0 right-0 p-6 text-white text-center z-30">
-          <h4 class="text-2xl font-semibold">Chanel — Project Manager</h4>
-          <p class="opacity-90">Leads innovation and ensures smooth delivery of projects.</p>
+          <h4 class="text-2xl font-semibold">Chanél Oldfield - Head Of Capaciti</h4>
+          <p class="opacity-90">An experienced and empathetic leader with a strong focus on emotional intelligence, values based leadership, and systems thinking to bring together multidisciplinary teams.</p>
         </div>
       </div>
 
@@ -138,8 +150,8 @@
         <img src="images/Kelly1 1 5.JPG" alt="Kelly - Software Engineer" class="max-h-full max-w-full object-contain relative z-10">
         <div class="absolute inset-0 bg-black/40 z-20"></div>
         <div class="absolute bottom-0 left-0 right-0 p-6 text-white text-center z-30">
-          <h4 class="text-2xl font-semibold">Kelly — Software Engineer</h4>
-          <p class="opacity-90">Builds scalable, reliable applications for our clients.</p>
+          <h4 class="text-2xl font-semibold">Kelly Maroon - Head of Career Education</h4>
+          <p class="opacity-90">Head of Institution, Learning & Development Manager, and Academic Operations Head—giving me full-spectrum insight into transformational development and leadership.</p>
         </div>
       </div>
 
@@ -148,18 +160,18 @@
         <img src="images/Chesarae3 1 5.JPG" alt="Chesarae - Designer" class="max-h-full max-w-full object-contain relative z-10">
         <div class="absolute inset-0 bg-black/40 z-20"></div>
         <div class="absolute bottom-0 left-0 right-0 p-6 text-white text-center z-30">
-          <h4 class="text-2xl font-semibold">Chesarae — Designer</h4>
-          <p class="opacity-90">Crafts visually stunning UI/UX designs.</p>
+          <h4 class="text-2xl font-semibold">Chesarae K Pillay - Head of Information Technology Services</h4>
+          <p class="opacity-90">responsible for making sure technology supports the business effectively, securely, and strategically.</p>
         </div>
       </div>
 
       <!-- Slide 4 -->
       <div class="absolute inset-0 flex items-center justify-center transition-opacity duration-1000 ease-in-out opacity-0" data-slide="3">
-        <img src="images/Nash4 1 5.JPG" alt="Nash- QA Engineer" class="max-h-full max-w-full object-contain relative z-10">
+        <img src="images/Nash4 1 5.JPG" alt="Nasheeta Du Toit - Head Of Brand" class="max-h-full max-w-full object-contain relative z-10">
         <div class="absolute inset-0 bg-black/40 z-20"></div>
         <div class="absolute bottom-0 left-0 right-0 p-6 text-white text-center z-30">
-          <h4 class="text-2xl font-semibold">Nash — QA Engineer</h4>
-          <p class="opacity-90">Ensures high-quality standards for all projects.</p>
+          <h4 class="text-2xl font-semibold">Nasheeta Du Toit - Head Of Brand</h4>
+          <p class="opacity-90">Seasoned Marketer & Communication Specialist, with experience in advertising, marketing, financial services and publishing fields. Strong digital skills in both technical and social media arenas, and a special love for enhancing experiences, processes and upskilling young talent</p>
         </div>
       </div>
 
@@ -194,25 +206,26 @@
     <div class="grid md:grid-cols-2 gap-8 items-start bg-[#F1D1D1] rounded-2xl shadow-xl p-8">
       <!-- Left: Contact Details -->
       <div class="space-y-6">
+      
         <!-- Phone -->
-        <a href="tel:+1234567890" class="flex items-center gap-4 group">
-          <div class="flex items-center justify-center w-12 h-12 rounded-full bg-[#6115D0] text-white shadow-md group-hover:bg-[#F25251] transition">
-            <i class="fas fa-envelope"></i>
-          </div>
-          <span class="text-lg text-[#1D2951] group-hover:text-[#F25251] transition">
-            +123 456 7890
-          </span>
-        </a>
+      <a href="tel:+27 (21) 409 7000" class="flex items-center gap-4 group">
+      <div class="flex items-center justify-center w-12 h-12 rounded-full bg-[#6115D0] text-white shadow-md group-hover:bg-[#F25251] transition">
+      <i class="fas fa-phone"></i>
+      </div>
+      <span class="text-lg text-[#1D2951] group-hover:text-[#F25251] transition">
+       +27 (21) 409 7000
+      </span>
+      </a>
 
         <!-- Email -->
-        <a href="mailto:youremail@example.com" class="flex items-center gap-4 group">
-          <div class="flex items-center justify-center w-12 h-12 rounded-full bg-[#6115D0] text-white shadow-md group-hover:bg-[#F25251] transition">
-            <i class="fas fa-envelope"></i>
-          </div>
-          <span class="text-lg text-[#1D2951] group-hover:text-[#F25251] transition">
-            youremail@example.com
-          </span>
-        </a>
+       <a href="mailto:youremail@example.com" class="flex items-center gap-4 group">
+       <div class="flex items-center justify-center w-12 h-12 rounded-full bg-[#6115D0] text-white shadow-md group-hover:bg-[#F25251] transition">
+      <i class="fas fa-envelope"></i>
+      </div>
+      <span class="text-lg text-[#1D2951] group-hover:text-[#F25251] transition">
+       reception@uvuafrica.com
+     </span>
+      </a>
 
         <!-- LinkedIn -->
         <a href="https://www.linkedin.com/in/yourlinkedin" target="_blank" class="flex items-center gap-4 group">
@@ -220,19 +233,20 @@
             <i class="fab fa-linkedin-in"></i>
           </div>
           <span class="text-lg text-[#1D2951] group-hover:text-[#F25251] transition">
-            linkedin.com/in/yourlinkedin
+            linkedin.com/company/capacitiza
           </span>
         </a>
 
         <!-- Address -->
-        <a href="https://maps.google.com?q=123+Business+Street,+Cape+Town" target="_blank" class="flex items-center gap-4 group">
-          <div class="flex items-center justify-center w-12 h-12 rounded-full bg-[#6115D0] text-white shadow-md group-hover:bg-[#F25251] transition">
-            <i class="fas fa-map-marker-alt"></i>
-          </div>
-          <span class="text-lg text-[#1D2951] group-hover:text-[#F25251] transition">
-            123 Business Street, Cape Town
-          </span>
-        </a>
+      <a href="https://maps.google.com?q=123+Business+Street,+Cape+Town" target="_blank" class="flex items-center gap-4 group">
+      <div class="flex items-center justify-center w-12 h-12 rounded-full aspect-square bg-[#6115D0] text-white shadow-md group-hover:bg-[#F25251] transition">
+      <i class="fas fa-map-marker-alt text-2xl"></i>
+       </div>
+      <span class="text-lg text-[#1D2951] group-hover:text-[#F25251] transition">
+      2nd Floor, Brickfield Canvas Building,<br>
+      35 Brickfield Road, Woodstock
+    </span>
+      </a>
 
       </div>
 
@@ -255,32 +269,6 @@
   </div>
 </section>
 
-<!-- Script to show success message -->
-<script>
-  const form = document.getElementById("contactForm");
-  const successMessage = document.getElementById("successMessage");
-
-  form.addEventListener("submit", function(e) {
-    e.preventDefault(); // Stop real form submission
-
-    // Show message
-    successMessage.classList.remove("hidden");
-
-    // Reset form fields
-    form.reset();
-
-    // Hide message after 4 seconds
-    setTimeout(() => {
-      successMessage.classList.add("hidden");
-    }, 4000);
-  });
-</script>
-
-
-
-
-
-
   <!-- Footer -->
   <footer class="bg-[#1D2951] text-white py-6 mt-16">
     <div class="max-w-7xl mx-auto px-4 text-center">
@@ -288,45 +276,29 @@
     </div>
   </footer>
 
-  <!-- Slider Script -->
-  <script>
-    (function () {
-      const slider = document.getElementById('slider');
-      const slides = slider.querySelectorAll('[data-slide]');
-      const dots = slider.querySelectorAll('[data-dot]');
-      let current = 0;
-      const total = slides.length;
-      const DURATION = 4000;
+  <div id="chatbot-container" class="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+    <!-- Chatbot Toggle Button -->
+    <button id="chatbot-toggle" class="bg-[#6115D0] hover:bg-[#F25251] text-white rounded-full shadow-lg w-14 h-14 flex items-center justify-center text-2xl focus:outline-none transition">
+      <i class="fas fa-comments"></i>
+    </button>
+    <!-- Chatbot Box (hidden by default) -->
+    <div id="chatbot-box" class="hidden mt-3 w-80 bg-white rounded-xl shadow-2xl border border-[#6115D0] flex flex-col overflow-hidden">
+      <div class="bg-[#6115D0] text-white px-4 py-3 flex items-center justify-between">
+        <span class="font-semibold">Capaciti Chatbot</span>
+        <button id="chatbot-close" class="text-white hover:text-[#F25251] text-xl">&times;</button>
+      </div>
+      <div id="chatbot-messages" class="flex-1 p-4 space-y-2 text-sm overflow-y-auto" style="max-height: 300px;">
+        <div class="text-gray-600">Hi 👋, how can I help you?</div>
+      </div>
+      <form id="chatbot-form" class="flex border-t border-gray-200">
+        <input id="chatbot-input" type="text" placeholder="Type your message..." class="flex-1 p-3 text-gray-700 focus:outline-none" autocomplete="off" />
+        <button type="submit" class="px-4 text-[#6115D0] font-bold hover:text-[#F25251]">Send</button>
+      </form>
+    </div>
+  </div>
 
-      function show(n) {
-        slides.forEach((s, i) => {
-          s.classList.toggle('opacity-100', i === n);
-          s.classList.toggle('opacity-0', i !== n);
-        });
-        dots.forEach((d, i) => {
-          d.classList.toggle('w-4', i === n);
-          d.classList.toggle('bg-white', i === n);
-          d.classList.toggle('bg-white/60', i !== n);
-        });
-        current = n;
-      }
 
-      let timer = setInterval(() => show((current + 1) % total), DURATION);
-      slider.addEventListener('mouseenter', () => clearInterval(timer));
-      slider.addEventListener('mouseleave', () => {
-        clearInterval(timer);
-        timer = setInterval(() => show((current + 1) % total), DURATION);
-      });
-      dots.forEach((dot, i) => {
-        dot.addEventListener('click', () => {
-          clearInterval(timer);
-          show(i);
-          timer = setInterval(() => show((current + 1) % total), DURATION);
-        });
-      });
-      show(0);
-    })();
-  </script>
+
 
 </body>
 </html>
