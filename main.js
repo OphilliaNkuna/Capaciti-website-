@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const faqs = [
     {
       keywords: ['apply', 'application', 'enroll', 'register'],
-      answer: "To apply, please visit our 'Contact Us' section or email reception@uvuafrica.com. We'll guide you through the process!"
+     answer:  "To apply, please visit our 'Contact Us' section or email hello@capaciti.org.za. We'll guide you through the process!"
     },
     {
       keywords: ['requirements', 'qualifications', 'needed', 'need'],
@@ -110,11 +110,11 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       keywords: ['location', 'where', 'address'],
-      answer: "We are located at 2nd Floor, Brickfield Canvas Building, 35 Brickfield Road, Woodstock, Cape Town."
+      answer: "We are located at Cape Town, Johannesburg and Hazyview. Visit our 'Contact Us' section for more details!"
     },
     {
       keywords: ['contact', 'email', 'phone', 'call'],
-      answer: "You can reach us at +27 (21) 409 7000 or reception@uvuafrica.com."
+       answer:  "To apply, please visit our 'Contact Us' section or email hello@capaciti.org.za. We'll guide you through the process!"
     },
     {
       keywords: ['help', 'support', 'assist'],
@@ -156,4 +156,20 @@ document.addEventListener("DOMContentLoaded", function () {
       messages.scrollTop = messages.scrollHeight;
     }, 700);
   });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const jobForm = document.querySelector('#job-application-modal form');
+  const applicationSuccess = document.getElementById('applicationSuccess');
+  if (jobForm && applicationSuccess) {
+    jobForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      applicationSuccess.classList.remove('hidden');
+      setTimeout(() => {
+        applicationSuccess.classList.add('hidden');
+        document.getElementById('job-application-modal').classList.add('hidden');
+        jobForm.reset();
+      }, 3000);
+    });
+  }
 });

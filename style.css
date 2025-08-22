@@ -112,6 +112,21 @@ button:hover, .button:hover {
   background-color: var(--space-kadet);
 }
 
+ 
+ /* Impact */
+  .stats { display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; }
+  .stat { text-align: center; }
+  .stat h3 { font-size: 2rem; color: var(--accent1); }
+
+  /* Testimonials */
+  .testimonials { background: #fff }
+  .testimonial {
+    max-width: 700px; margin: 0 auto; padding: 2rem;
+    font-style: italic; background: var(--light); border-radius: 15px;
+  }
+  .testimonial span { display: block; margin-top: 1rem; font-weight: bold; color: var(--primary); }
+ 
+
 /* ===========================
     Sections
 =========================== */

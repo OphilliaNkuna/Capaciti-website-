@@ -26,19 +26,19 @@
       <ul class="flex flex-col md:flex-row md:space-x-6 space-y-2 md:space-y-0 text-center md:text-right text-white">
         <li><a href="#home" class="px-3 py-1 rounded hover:bg-white hover:text-blue-600 transition">Home</a></li>
         <li><a href="#about" class="px-3 py-1 rounded hover:bg-white hover:text-blue-600 transition">About</a></li>
-        <li><a href="#services" class="px-3 py-1 rounded hover:bg-white hover:text-blue-600 transition">Services</a></li>
+        <li><a href="#opportunities" class="px-3 py-1 rounded hover:bg-white hover:text-blue-600 transition">Opportunities</a></li>
+         <li><a href="#news" class="px-3 py-1 rounded hover:bg-white hover:text-blue-600 transition">News and Events</a></li>
         <li><a href="#contact" class="px-3 py-1 rounded hover:bg-white hover:text-blue-600 transition">Contact</a></li>
       </ul>
     </nav>
   </div>
 </header>
-
-      </h1>
       <nav>
         <ul class="flex flex-col md:flex-row md:space-x-6 space-y-2 md:space-y-0 text-center md:text-right text-white">
           <li><a href="#home" class="px-3 py-1 rounded hover:bg-white hover:text-[#1D2951] transition">Home</a></li>
           <li><a href="#about" class="px-3 py-1 rounded hover:bg-white hover:text-[#1D2951] transition">About</a></li>
-          <li><a href="#services" class="px-3 py-1 rounded hover:bg-white hover:text-[#1D2951] transition">Services</a></li>
+         <li><a href="#opportunities" class="px-3 py-1 rounded hover:bg-white hover:text-[#1D2951] transition">Opportunities</a></li>
+         <li><a href="#news"class="px-3 py-1 rounded hover:bg-white hover:text-[#1D2951] transition">News and Events</a></li>
           <li><a href="#contact" class="px-3 py-1 rounded hover:bg-white hover:text-[#1D2951] transition">Contact</a></li>
         </ul>
       </nav>
@@ -52,7 +52,14 @@
     <div class="relative z-20 text-center px-4">
       <h2 class="text-[#F25251] text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg">Welcome to Capaciti</h2>
       <p class="text-[#F1D1D1] text-lg md:text-xl mb-6 drop-shadow-md">Innovative solutions for your business growth.</p>
-      <button class="px-6 py-3 bg-[#F25251] text-white font-semibold rounded-lg hover:bg-[#6115D0] drop-shadow-md">Get Started</button>
+     <button
+  class="px-6 py-3 bg-[#F25251] text-white font-semibold rounded-lg hover:bg-[#6115D0] drop-shadow-md"
+  onclick="document.getElementById('opportunities').scrollIntoView({ behavior: 'smooth' });"     >
+  WORK WITH US
+</button>
+
+
+
     </div>
   </section>
 
@@ -63,16 +70,59 @@
       <p class="text-gray-700 text-center max-w-3xl mx-auto mb-12">
        Established in 2010, CAPACITI, part of the UVU Africa Group, is at the forefront of preparing young individuals for the tech sector. CAPACITI has emerged as one of South Africa’s leading digital talent accelerators, annually training and placing approximately 1000 unemployed youth. CAPACITI is dedicated to fostering the inclusive growth of the digital economy by creating a pipeline of future-fit, skilled individuals equipped with relevant digital skills aligned with industry demand. Since its inception, CAPACITI has been refining solutions that aim to economically integrate talent, by providing scalable digital skills training and preparing them for the evolving workplace of the future. As a non-profit organisation, CAPACITI leverages partner investments to deliver demand-driven, targeted technical training that positively impacts lives.
       </p>
-      <div class="grid sm:grid-cols-2 gap-8 mb-16">
-        <div class="bg-gradient-to-br from-[#1D2951] to-[#6115D0] text-white p-8 rounded-lg shadow-lg hover:scale-105 transform transition text-center">
-          <h3 class="text-2xl font-semibold mb-3">Our Mission</h3>
-          <p>CAPACITI aims to democratize tech careers and foster inclusive societies in Africa, viewing quality education as essential for a diverse and growing digital economy.</p>
-        </div>
-        <div class="bg-gradient-to-br from-[#F25251] to-[#F1D1D1] text-white p-8 rounded-lg shadow-lg hover:scale-105 transform transition text-center">
-          <h3 class="text-2xl font-semibold mb-3">Our Vision</h3>
-          <p>We aim to empower digitally marginalized youth with technical skills and work readiness, focusing on meaningful career opportunities beyond just job acquisition.</p>
-        </div>
+
+      <!-- Impact -->
+  <section id="impact" class="py-16 bg-gradient-to-r from-[#6115D0] via-[#F25251] to-[#F1D1D1]">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="text-4xl font-bold mb-10 text-white drop-shadow-lg">Our Impact</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+      <div class="bg-white/20 backdrop-blur-md rounded-xl shadow-lg p-8 flex flex-col items-center hover:scale-105 transition">
+        <div class="text-5xl text-[#6115D0] mb-2"><i class="fas fa-user-graduate"></i></div>
+        <h3 class="text-3xl font-bold text-[#6115D0] mb-1">5000+</h3>
+        <p class="text-lg text-[#1D2951] font-semibold">Graduates</p>
       </div>
+      <div class="bg-white/20 backdrop-blur-md rounded-xl shadow-lg p-8 flex flex-col items-center hover:scale-105 transition">
+        <div class="text-5xl text-[#F25251] mb-2"><i class="fas fa-briefcase"></i></div>
+        <h3 class="text-3xl font-bold text-[#F25251] mb-1">85%</h3>
+        <p class="text-lg text-[#1D2951] font-semibold">Employment Rate</p>
+      </div>
+      <div class="bg-white/20 backdrop-blur-md rounded-xl shadow-lg p-8 flex flex-col items-center hover:scale-105 transition">
+        <div class="text-5xl text-[#1D2951] mb-2"><i class="fas fa-handshake"></i></div>
+        <h3 class="text-3xl font-bold text-[#1D2951] mb-1">200+</h3>
+        <p class="text-lg text-[#1D2951] font-semibold">Industry Partners</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-16 bg-gradient-to-r from-[#6115D0] via-[#F25251] to-[#F1D1D1]">
+  <div class="max-w-3xl mx-auto px-4 text-center">
+    <h2 class="text-4xl font-bold mb-10 text-white drop-shadow-lg">What Our Graduates Say</h2>
+    <div class="bg-white/30 backdrop-blur-md rounded-xl shadow-lg p-8 flex flex-col items-center mx-auto">
+      <div class="text-5xl text-[#F25251] mb-4">
+        <i class="fas fa-quote-left"></i>
+      </div>
+      <p class="text-xl italic text-[#1D2951] mb-4 max-w-2xl">"CAPACITI changed my life. I went from having no direction to landing my dream job in tech."</p>
+      <span class="font-semibold text-[#6115D0]">- Thandi M.</span>
+    </div>
+  </div>
+</section>
+
+      <div class="h-12"></div>
+
+     <div class="max-w-7xl mx-auto px-4 mt-8 mb-16">
+  <div class="grid sm:grid-cols-2 gap-8">
+    <div class="bg-gradient-to-br from-[#1D2951] to-[#6115D0] text-white p-8 rounded-lg shadow-lg hover:scale-105 transform transition text-center">
+      <h3 class="text-2xl font-semibold mb-3">Our Mission</h3>
+      <p>CAPACITI aims to democratize tech careers and foster inclusive societies in Africa, viewing quality education as essential for a diverse and growing digital economy.</p>
+    </div>
+    <div class="bg-gradient-to-br from-[#F25251] to-[#F1D1D1] text-white p-8 rounded-lg shadow-lg hover:scale-105 transform transition text-center">
+      <h3 class="text-2xl font-semibold mb-3">Our Vision</h3>
+      <p>We aim to empower digitally marginalized youth with technical skills and work readiness, focusing on meaningful career opportunities beyond just job acquisition.</p>
+    </div>
+  </div>
+</div>
     </div>
   </section>
 
@@ -98,37 +148,151 @@ our unwavering commitment to always do the right thing. It is the foundation of 
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section id="services" class="py-16 bg-gradient-to-r from-[#1D2951] via-[#6115D0] to-[#F25251]">
-    <div class="max-w-6xl mx-auto px-4 text-center text-white">
-      <h2 class="text-4xl font-bold mb-12">Our Services</h2>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white/20 backdrop-blur-md p-6 rounded-lg shadow hover:shadow-xl transition flex flex-col items-center relative overflow-hidden min-h-[250px]">
-  <img src="images/webdevelopment.png" alt="Web Development" class="absolute inset-0 w-full h-full object-cover z-0" />
-  <div class="relative z-10 bg-black/40 w-full h-full flex flex-col items-center justify-center p-4 rounded-lg">
-    <h3 class="text-xl font-semibold mb-2 text-white">Web Development</h3>
-    <p class="text-white">Building responsive, modern websites tailored to your business needs.</p>
+<!-- Opportunities Section -->
+<section id="opportunities" class="py-16 bg-gradient-to-r from-[#1D2951] via-[#6115D0] to-[#F25251]">
+  <div class="max-w-6xl mx-auto px-4 text-center text-white">
+    <h2 class="text-4xl font-bold mb-12">Opportunities at CAPACITI</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Web Development -->
+      <div class="bg-white/20 backdrop-blur-md p-6 rounded-lg shadow hover:shadow-xl transition flex flex-col items-center relative overflow-hidden min-h-[250px]">
+        <img src="images/webdevelopment.png" alt="Web Development" class="absolute inset-0 w-full h-full object-cover z-0" />
+        <div class="relative z-10 bg-black/40 w-full h-full flex flex-col items-center justify-center p-4 rounded-lg">
+          <h3 class="text-xl font-semibold mb-2 text-white">Web Development</h3>
+          <p class="text-white">Building responsive, modern websites tailored to your business needs.</p>
+          <button onclick="document.getElementById('job-application-modal').classList.remove('hidden')" class="absolute bottom-4 right-4 z-20 px-4 py-2 bg-[#F25251] text-white rounded-lg font-semibold shadow hover:bg-[#6115D0] transition">
+            Apply Now
+          </button>
+        </div>
+      </div>
+      <!-- AI Solutions -->
+      <div class="bg-white/20 backdrop-blur-md p-6 rounded-lg shadow hover:shadow-xl transition flex flex-col items-center relative overflow-hidden min-h-[250px]">
+        <img src="images/ai.png" alt="AI Solutions" class="absolute inset-0 w-full h-full object-cover z-0" />
+        <div class="relative z-10 bg-black/40 w-full h-full flex flex-col items-center justify-center p-4 rounded-lg">
+          <h3 class="text-xl font-semibold mb-2 text-white">AI Solutions</h3>
+          <p class="text-white">Integrating AI and automation to enhance your business processes.</p>
+          <button onclick="document.getElementById('job-application-modal').classList.remove('hidden')" class="absolute bottom-4 right-4 z-20 px-4 py-2 bg-[#F25251] text-white rounded-lg font-semibold shadow hover:bg-[#6115D0] transition">
+            Apply Now
+          </button>
+        </div>
+      </div>
+      <!-- IT Support -->
+      <div class="bg-white/20 backdrop-blur-md p-6 rounded-lg shadow hover:shadow-xl transition flex flex-col items-center relative overflow-hidden min-h-[250px]">
+        <img src="images/itsupport.png" alt="IT Support" class="absolute inset-0 w-full h-full object-cover z-0" />
+        <div class="relative z-10 bg-black/40 w-full h-full flex flex-col items-center justify-center p-4 rounded-lg">
+          <h3 class="text-xl font-semibold mb-2 text-white">IT Support</h3>
+          <p class="text-white">Providing reliable IT support and solutions to keep your business running smoothly.</p>
+          <button onclick="document.getElementById('job-application-modal').classList.remove('hidden')" class="absolute bottom-4 right-4 z-20 px-4 py-2 bg-[#F25251] text-white rounded-lg font-semibold shadow hover:bg-[#6115D0] transition">
+            Apply Now
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
+</section>
+
+<!-- Job Application Modal -->
+<div id="job-application-modal" class="fixed inset-0 bg-black/60 z-50 flex items-center justify-center hidden">
+  <div class="bg-white rounded-xl shadow-2xl max-w-2xl w-full p-8 relative overflow-y-auto max-h-[90vh]">
+    <button onclick="document.getElementById('job-application-modal').classList.add('hidden')" class="absolute top-4 right-4 text-2xl text-[#F25251] hover:text-[#6115D0]">&times;</button>
+    <h2 class="text-2xl font-bold mb-6 text-[#6115D0] text-center">Apply for this job</h2>
+    <form class="space-y-4" enctype="multipart/form-data">
+      <div class="grid md:grid-cols-2 gap-4">
+        <div>
+          <label class="block font-semibold mb-1">First name*</label>
+          <input type="text" required class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#6115D0]" />
+        </div>
+        <div>
+          <label class="block font-semibold mb-1">Surname*</label>
+          <input type="text" required class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#6115D0]" />
+        </div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-4">
+        <div>
+          <label class="block font-semibold mb-1">Contact number*</label>
+          <input type="tel" required class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#6115D0]" />
+        </div>
+        <div>
+          <label class="block font-semibold mb-1">Email address*</label>
+          <input type="email" required class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#6115D0]" />
+        </div>
+      </div>
+      <div>
+        <label class="block font-semibold mb-1">Application details</label>
+        <textarea class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#6115D0]" rows="2"></textarea>
+      </div>
+      <div class="grid md:grid-cols-2 gap-4">
+        <div>
+          <label class="block font-semibold mb-1">Current position*</label>
+          <input type="text" required class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#6115D0]" />
+        </div>
+        <div>
+          <label class="block font-semibold mb-1">Current salary*</label>
+          <input type="text" required class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#6115D0]" />
+        </div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-4">
+        <div>
+          <label class="block font-semibold mb-1">Preferred salary*</label>
+          <input type="text" required class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#6115D0]" />
+        </div>
+        <div>
+          <label class="block font-semibold mb-1">Notice period*</label>
+          <input type="text" required class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#6115D0]" />
+        </div>
+      </div>
+      <div>
+        <label class="block font-semibold mb-1">Where do you reside*</label>
+        <input type="text" required class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#6115D0]" />
+      </div>
+      <div>
+        <label class="block font-semibold mb-1">Reference number</label>
+        <input type="text" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#6115D0]" />
+      </div>
+      <div>
+        <label class="block font-semibold mb-1">Motivate the reason for applying for this position*</label>
+        <textarea required class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#6115D0]" rows="2"></textarea>
+      </div>
+      <div>
+        <label class="block font-semibold mb-1">Work experience</label>
+        <input type="text" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#6115D0]" />
+      </div>
+      <div>
+        <label class="block font-semibold mb-1">How many years’ experience do you have in this field*</label>
+        <select required class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#6115D0]">
+          <option value="">Please select</option>
+          <option value="0-1">0-1</option>
+          <option value="2-3">2-3</option>
+          <option value="4-5">4-5</option>
+          <option value="6+">6+</option>
+        </select>
+      </div>
+      <div>
+        <label class="block font-semibold mb-1">Why are you considering leaving your current employment?*</label>
+        <textarea required class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#6115D0]" rows="2"></textarea>
+      </div>
+      <div>
+        <label class="block font-semibold mb-1">Upload your CV*</label>
+        <input type="file" accept=".pdf,.jpg,.doc,.docx" required class="w-full p-2 border rounded bg-white" />
+        <small class="text-gray-500">Accepted file types: pdf, jpg, doc, docx. Max. file size: 5 MB.</small>
+      </div>
+      <div>
+        <label class="block font-semibold mb-1">Upload supporting documents</label>
+        <input type="file" accept=".pdf,.jpg,.doc,.docx" class="w-full p-2 border rounded bg-white" />
+        <small class="text-gray-500">Accepted file types: pdf, jpg, doc, docx. Max. file size: 5 MB.</small>
+      </div>
+<div class="flex items-center gap-2">
+  <input type="checkbox" required class="accent-[#6115D0]" id="consent" />
+  <label for="consent" class="text-sm">I hereby confirm that all information submitted is true and accurate.</label>
 </div>
-        
-             <div class="bg-white/20 backdrop-blur-md p-6 rounded-lg shadow hover:shadow-xl transition flex flex-col items-center relative overflow-hidden min-h-[250px]">
-  <img src="images/ai.png" alt="Web Development" class="absolute inset-0 w-full h-full object-cover z-0" />
-  <div class="relative z-10 bg-black/40 w-full h-full flex flex-col items-center justify-center p-4 rounded-lg">
-    <h3 class="text-xl font-semibold mb-2 text-white">AI Solutions</h3>
-    <p class="text-white">Integrating AI and automation to enhance your business processes.</p>
+<button type="submit" class="w-full bg-[#6115D0] hover:bg-[#F25251] text-white font-semibold py-3 rounded-lg shadow transition">Submit Application</button>
+<p id="applicationSuccess" class="hidden text-green-600 font-semibold mt-2 text-center animate-bounce">
+  ✅ Your application has been received!
+</p>
+    </form>
   </div>
 </div>
 
-     <div class="bg-white/20 backdrop-blur-md p-6 rounded-lg shadow hover:shadow-xl transition flex flex-col items-center relative overflow-hidden min-h-[250px]">
-  <img src="images/itsupport.png" alt="Web Development" class="absolute inset-0 w-full h-full object-cover z-0" />
-  <div class="relative z-10 bg-black/40 w-full h-full flex flex-col items-center justify-center p-4 rounded-lg">
-    <h3 class="text-xl font-semibold mb-2 text-white">IT Support</h3>
-    <p class="text-white">Reliable technical support and system maintenance for seamless operations.</p>
-  </div>
-</div>
-      </div>
-    </div>
-  </section>
+  
 <!-- Team Slider Section -->
 <section id="team" class="py-16 bg-[#F1D1D1]">
   <div class="max-w-5xl mx-auto px-4">
@@ -213,7 +377,7 @@ our unwavering commitment to always do the right thing. It is the foundation of 
       <i class="fas fa-phone"></i>
       </div>
       <span class="text-lg text-[#1D2951] group-hover:text-[#F25251] transition">
-       +27 (21) 409 7000
+       +27 (21) 003 7509
       </span>
       </a>
 
@@ -223,7 +387,7 @@ our unwavering commitment to always do the right thing. It is the foundation of 
       <i class="fas fa-envelope"></i>
       </div>
       <span class="text-lg text-[#1D2951] group-hover:text-[#F25251] transition">
-       reception@uvuafrica.com
+       hello@capaciti.org.za
      </span>
       </a>
 
@@ -243,8 +407,7 @@ our unwavering commitment to always do the right thing. It is the foundation of 
       <i class="fas fa-map-marker-alt text-2xl"></i>
        </div>
       <span class="text-lg text-[#1D2951] group-hover:text-[#F25251] transition">
-      2nd Floor, Brickfield Canvas Building,<br>
-      35 Brickfield Road, Woodstock
+      Cape Town,Johannesburg,Hazyview
     </span>
       </a>
 
