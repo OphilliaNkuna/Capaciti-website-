@@ -2,23 +2,25 @@
     Root Brand Colors
 =========================== */
 :root {
-    --space-kadet: #1D2951;
-    --purple: #6115D0;
-    --salmon: #F25251;
-    --pink: #F1D1D1;
+  --space-kadet: #1D2951;
+  --purple: #6115D0;
+  --salmon: #F25251;
+  --pink: #F1D1D1;
+  --light: #f9f9f9;
+  --primary: #6115D0;
+  --accent1: #F25251;
 }
-
 
 /* ===========================
     General Body
 =========================== */
 body {
-    background-color: var(--pink);
-    color: var(--space-kadet);
-    font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
-    margin: 0;
-    padding-top: 80px; /* prevent content hidden behind fixed header */
+  background-color: var(--pink);
+  color: var(--space-kadet);
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding-top: 80px; /* prevent content hidden behind fixed header */
 }
 
 /* ===========================
@@ -47,7 +49,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000; /* ensure above overlays */
+  z-index: 1000;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   display: flex;
   justify-content: space-between;
@@ -82,8 +84,6 @@ header nav ul li a,
   border-radius: 0.375rem;
   transition: all 0.3s ease;
   display: block;
-  position: relative;
-  z-index: 1010; /* keeps links clickable */
 }
 header nav ul li a:hover,
 .nav-link:hover {
@@ -94,6 +94,141 @@ header nav ul li a.active {
   color: white;
   background-color: #1e40af;
 }
+
+/* Hero Section */
+#home {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 5rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Carousel Container */
+#hero-carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 1rem;
+  z-index: 0;
+}
+
+/* Carousel Images */
+#hero-carousel .carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;       /* Full image fits */
+  object-position: center;   /* Centered */
+  position: absolute;
+  inset: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Overlay */
+#hero-carousel .overlay,
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(97, 21, 208, 0.5); /* semi-transparent purple */
+  z-index: 1;
+}
+
+/* Text Content */
+#home .text-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  max-width: 90%;
+  color: #F1D1D1;
+}
+
+#home .text-content h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #F25251;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+}
+
+#home .text-content p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+
+/* Work Button */
+#home .text-content button {
+  padding: 0.75rem 1.5rem;
+  background-color: #F25251;
+  color: white;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#home .text-content button:hover {
+  background-color: #6115D0;
+}
+
+/* Dots Navigation */
+.carousel-dots {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  gap: 0.5rem;
+}
+.carousel-dots span {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.6);
+  cursor: pointer;
+}
+.carousel-dots span.active {
+  background-color: #F25251;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  #home {
+    height: 60vh;
+  }
+  #home .text-content h2 {
+    font-size: 1.75rem;
+  }
+  #home .text-content p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 640px) {
+  #home {
+    height: 50vh;
+  }
+  #hero-carousel .carousel-img {
+    object-fit: cover; /* Fill width on mobile */
+  }
+  #home .text-content h2 {
+    font-size: 1.5rem;
+  }
+  #home .text-content p {
+    font-size: 0.9rem;
+  }
+}
+
 
 /* ===========================
    Buttons
@@ -112,114 +247,75 @@ button:hover, .button:hover {
   background-color: var(--space-kadet);
 }
 
- 
- /* Impact */
-  .stats { display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; }
-  .stat { text-align: center; }
-  .stat h3 { font-size: 2rem; color: var(--accent1); }
-
-  /* Testimonials */
-  .testimonials { background: #fff }
-  .testimonial {
-    max-width: 700px; margin: 0 auto; padding: 2rem;
-    font-style: italic; background: var(--light); border-radius: 15px;
-  }
-  .testimonial span { display: block; margin-top: 1rem; font-weight: bold; color: var(--primary); }
- 
-
 /* ===========================
-    Sections
+   Sections
 =========================== */
 section {
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 5rem 1rem;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    overflow: hidden;
-}
-
-/* Overlay */
-.section-overlay, .hero-overlay {
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0,0,0,0.4);
-    z-index: 1;
-}
-
-/* ===========================
-    Hero Image
-=========================== */
-.hero-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    transform: scale(1);
-    animation: zoom 20s ease-in-out infinite;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-}
-@keyframes zoom {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
-}
-
-/* ===========================
-   Section Container / Content
-=========================== */
-.section-container {
   position: relative;
-  z-index: 10;
-  max-width: 1200px;
-  text-align: center;
-  background-color: rgba(255,255,255,0.85);
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 1rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
-
-/* Headings */
-h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
-}
-h3, h4 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 0.75rem;
+.section-overlay, .hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 1;
 }
 
 /* ===========================
-   Mission, Vision, Core Values Cards
+    Hero Carousel
 =========================== */
-.info-card {
-  background-color: rgba(255,255,255,0.95);
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-  transition: transform 0.3s, box-shadow 0.3s;
-  text-align: center;
+#hero-carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
 }
-.info-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+#hero-carousel .carousel-img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* no stretching */
+  object-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
-.info-card h3, .info-card h4 {
-  color: var(--space-kadet);
+#hero-carousel .carousel-img.active {
+  opacity: 1;
 }
-.info-card p {
-  color: #333;
-  line-height: 1.6;
+/* Dots */
+.carousel-dots {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 20;
+}
+.carousel-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.6);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.carousel-dot.active {
+  background: var(--salmon);
+  width: 16px;
+  height: 16px;
 }
 
 /* ===========================
@@ -242,22 +338,14 @@ h3, h4 {
   border-radius: 1rem;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
-.group-a img {
+.about-grid img {
   width: 100%;
-  height: 16rem;
+  height: 18rem;
   object-fit: cover;
   border-radius: 1rem;
   transition: transform 0.3s ease;
 }
-.group-b img {
-  width: 100%;
-  height: 20rem;
-  object-fit: cover;
-  border-radius: 1rem;
-  transition: transform 0.3s ease;
-}
-.group-a img:hover,
-.group-b img:hover {
+.about-grid img:hover {
   transform: scale(1.05);
 }
 
@@ -277,7 +365,7 @@ h3, h4 {
 }
 
 /* ===========================
-   Form Inputs
+   Forms
 =========================== */
 form input, form textarea {
   padding: 0.75rem;
