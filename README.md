@@ -77,7 +77,7 @@ Install the “Live Server” extension (by Ritwick Dey).
 
 Right–click index.html → Open with Live Server (or click the Go Live button in the status bar).
 
-Your site will open at a local URL (e.g., http://127.0.0.1:5500). Live reload is automatic on save.
+Your site will open at a local URL (e.g.,http://127.0.0.1:5500/index.html). Live reload is automatic on save.
 
 Tip: Keep assets optimized (WebP/AVIF, minified CSS/JS).
 
