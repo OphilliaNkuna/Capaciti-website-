@@ -99,7 +99,7 @@ cd <your-repo-folder>
 # 2) Install deps
 npm install
 
-Open http://localhost:3000 in your browser.
+Open https://capacitiwebsite.vercel.app/ in your browser.
 
 
 🚀 Deploy
